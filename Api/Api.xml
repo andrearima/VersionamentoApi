@@ -1,0 +1,141 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Api</name>
+    </assembly>
+    <members>
+        <member name="T:Api.Configurations.ConfigureSwaggerOptions">
+            <summary>
+            Configures the Swagger generation options.
+            </summary>
+            <remarks>This allows API versioning to define a Swagger document per API version after the
+            <see cref="T:Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider"/> service has been resolved from the service container.</remarks>
+        </member>
+        <member name="M:Api.Configurations.ConfigureSwaggerOptions.#ctor(Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Api.Configurations.ConfigureSwaggerOptions"/> class.
+            </summary>
+            <param name="provider">The <see cref="T:Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider">provider</see> used to generate Swagger documents.</param>
+        </member>
+        <member name="M:Api.Configurations.ConfigureSwaggerOptions.Configure(Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenOptions)">
+            <inheritdoc />
+        </member>
+        <member name="T:Api.Configurations.SwaggerDefaultValues">
+            <summary>
+            Represents the Swagger/Swashbuckle operation filter used to document the implicit API version parameter.
+            </summary>
+            <remarks>This <see cref="T:Swashbuckle.AspNetCore.SwaggerGen.IOperationFilter"/> is only required due to bugs in the <see cref="T:Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator"/>.
+            Once they are fixed and published, this class can be removed.</remarks>
+        </member>
+        <member name="M:Api.Configurations.SwaggerDefaultValues.Apply(Microsoft.OpenApi.Models.OpenApiOperation,Swashbuckle.AspNetCore.SwaggerGen.OperationFilterContext)">
+            <summary>
+            Applies the filter to the specified operation using the given context.
+            </summary>
+            <param name="operation">The operation to apply the filter to.</param>
+            <param name="context">The current operation filter context.</param>
+        </member>
+        <member name="M:Api.V1.Controllers.BebidasController.Get">
+            <summary>
+            Obtem lista de Bebidas
+            </summary>
+        </member>
+        <member name="M:Api.V1.Controllers.BebidasController.Get(System.Guid)">
+            <summary>
+            Obtem Bebida por Id
+            </summary>
+        </member>
+        <member name="M:Api.V1.Controllers.BebidasController.Post(Api.V1.ViewModels.BebidaViewModel)">
+            <summary>
+            Grava nova bebida
+            </summary>
+            <param name="bebida"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.V1.Controllers.BebidasController.Put(System.Int32,Api.V1.ViewModels.BebidaViewModel)">
+            <summary>
+            Atualiza Bebida
+            </summary>
+            <param name="bebida"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.V1.Controllers.BebidasController.Delete(System.Int32)">
+            <summary>
+            Deleta a Bebida
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Api.V2.Controllers.BebidasController">
+            <summary>
+            ascascasc
+            </summary>
+        </member>
+        <member name="M:Api.V2.Controllers.BebidasController.Get">
+            <summary>
+            Obtem lista de Bebidas
+            </summary>
+        </member>
+        <member name="M:Api.V2.Controllers.BebidasController.Get(System.Guid)">
+            <summary>
+            Obtem Bebida por Id
+            </summary>
+        </member>
+        <member name="M:Api.V2.Controllers.BebidasController.Post(Api.V2.ViewModels.BebidaViewModel)">
+            <summary>
+            Grava nova bebida
+            </summary>
+            <param name="bebida"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.V2.Controllers.BebidasController.Put(System.Int32,Api.V2.ViewModels.BebidaViewModel)">
+            <summary>
+            Atualiza Bebida
+            </summary>
+            <param name="bebida"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.V2.Controllers.BebidasController.Delete(System.Int32)">
+            <summary>
+            Deleta a Bebida
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Api.V3.Controllers.BebidasController">
+            <summary>
+            Controller de Bebidas Versão 3.0
+            </summary>
+        </member>
+        <member name="M:Api.V3.Controllers.BebidasController.Get">
+            <summary>
+            Obtem lista de Bebidas
+            </summary>
+        </member>
+        <member name="M:Api.V3.Controllers.BebidasController.Get(System.Guid)">
+            <summary>
+            Obtem Bebida por Id
+            </summary>
+        </member>
+        <member name="M:Api.V3.Controllers.BebidasController.Post(Api.V3.ViewModels.BebidaViewModel)">
+            <summary>
+            Grava nova bebida
+            </summary>
+            <param name="bebida"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.V3.Controllers.BebidasController.Put(System.Int32,Api.V3.ViewModels.BebidaViewModel)">
+            <summary>
+            Atualiza Bebida
+            </summary>
+            <param name="bebida"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Api.V3.Controllers.BebidasController.Delete(System.Int32)">
+            <summary>
+            Deleta a Bebida
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
